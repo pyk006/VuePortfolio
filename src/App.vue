@@ -1,7 +1,7 @@
 <template>
   <div>
     
-  <nav class = "fixed nav-bar">
+  <nav class = "nav-bar">
     <div class="logo__main" @click="refreshPage">
       <svg
               version="1.1"
@@ -43,9 +43,6 @@ export default {
 }
 </script>
 <style>
-* {
-  margin: 0 !important;
-}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
