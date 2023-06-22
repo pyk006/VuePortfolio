@@ -2,12 +2,24 @@
         <h1 class = "project-header">
             Projects
             <div class = "grid">
-              <div class = "grid-item grid-animal" @click="githubRedirect"></div>
-              <div class = "grid-item grid-tenmo" @click="githubRedirect"></div>
-              <div class = "grid-item grid-vending" @click="githubRedirect"></div>
-              <div class = "grid-item grid-gym" @click="githubRedirect"></div>
-              <div class = "grid-item grid-yum" @click="githubRedirect"></div>
-              <div class = "grid-item grid-data" @click="githubRedirect"></div>
+              <div class = "grid-item grid-animal" @click="githubRedirect($event)">
+                <img class = "card-image animal-shelter" src="/Images/TEPaws.PNG" alt="shelter-website">
+              </div>
+              <div class = "grid-item grid-tenmo" @click="githubRedirect($event)">
+                <img class = "card-image tenmo" src="/Images/Tenmo.PNG" alt="tenmo-app">
+              </div>
+              <div class = "grid-item grid-vending" @click="githubRedirect($event)">
+                <img class = "card-image vending-machine" src="/Images/Vending.PNG" alt="vending-machine-app">
+              </div>
+              <div class = "grid-item grid-gym" @click="githubRedirect($event)">
+                <img class = "card-image gym-pal" src="/Images/Gym.PNG" alt="gym-pal-app">
+              </div>
+              <div class = "grid-item grid-yum" @click="githubRedirect($event)">
+                <img class = "card-image mega-yum" src="/Images/Megayum.PNG" alt="mega-yum-prototype">
+              </div>
+              <div class = "grid-item grid-data" @click="githubRedirect($event)">
+                <img class = "card-image rot-13" src="/Images/ROT13.PNG" alt="rot-13-cli">
+              </div>
           </div>
 
         </h1>
@@ -22,22 +34,24 @@ export default {
   },
   methods: {
     githubRedirect (e) {
-      if (e.target.classList.contains('grid-animal')) {
+      const gridItem = e.currentTarget;
+
+      if (gridItem.classList.contains('grid-animal')) {
         window.open('https://github.com/pyk006/T.E.-Paws-Rescue', '_blank');
       }
-      if (e.target.classList.contains('grid-tenmo')) {
+      if (gridItem.classList.contains('grid-tenmo')) {
         window.open('https://github.com/crystallyyy/Tenmo', '_blank');
       }
-      if (e.target.classList.contains('grid-vending')) {
+      if (gridItem.classList.contains('grid-vending')) {
         window.open('https://github.com/pyk006/Vending-Machine', '_blank');
       }
-      if (e.target.classList.contains('grid-gym')) {
+      if (gridItem.classList.contains('grid-gym')) {
         window.open('https://github.com/nikkih95159/Gym-Pal', '_blank');
       }
-      if (e.target.classList.contains('grid-yum')) {
+      if (gridItem.classList.contains('grid-yum')) {
         window.open('https://www.figma.com/proto/EYtt0E4ENxZlbZdrDxLgtx/MegaYum?node-id=136-0&starting-point-node-id=136%3A0', '_blank');
       }
-      if (e.target.classList.contains('grid-data')) {
+      if (gridItem.classList.contains('grid-data')) {
         window.open('https://github.com/pyk006/ROT13-Encoder', '_blank');
       }
     }
@@ -98,4 +112,18 @@ export default {
     .grid-data {
       grid-area: "data";
     }
+    .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .vending-machine, .rot-13 {
+    object-position: left;
+  }
+  .gym-pal {
+    object-position: center;
+  }
+  .mega-yum {
+    object-position: center;
+  }
 </style>
