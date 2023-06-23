@@ -10,11 +10,10 @@ As of now, I have successfully completed an incredible Full Stack Development Bo
     </div>
   </template>
   <style scoped>
-  * {
-    background-color: #061428;
-    height: 100vh
-  }
+
   .about {
+    min-height: 100vh;
+    background-color: #061428;
     padding: 50px;
     display: flex;
     flex-direction: column;
