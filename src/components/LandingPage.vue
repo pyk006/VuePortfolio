@@ -715,7 +715,7 @@
   
   
   .hello {
-    background: linear-gradient(90deg, #03031d, #1a0303, #141f2c, #19142c);
+    background: linear-gradient(90deg, #03031d, #1a0303);
     animation: gradient 40s ease infinite;
     background-size: 600% 600%;
     display: flex;

@@ -76,19 +76,20 @@ export default {
   justify-content: flex-end;
   padding: 10px;
   background-color:#061428;
-  box-shadow: 0 0.3rem 0.5rem rgb(85, 159, 194);
+  box-shadow: 0 0.5rem 1rem rgba(85, 159, 194, 0.6);
 }
 
 nav a {
   display: inline-block;
   font-weight: bold;
-  color: #2c3e50;
+
+  color: #35697e;
   padding-top: 30px;
   padding-right: 60px;
 }
 
 nav a.router-link-exact-active {
-  color: #5da7d1;
+  color: #c5efff;
 }
 .footer {
   padding: 20px;
