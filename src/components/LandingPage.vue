@@ -725,6 +725,7 @@
   }
   
   .landing_box {
+    height: 100vh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -751,5 +752,21 @@
       background-position: 0% 50%;
     }
   }
+  @media only screen and (max-width: 1023px) {
+  .landing_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    max-width: 100%; 
+    padding-left: 0;
+  }
+  svg {
+    width: 100%; /* Set the width of the SVG container to 100% of its parent */
+    height: auto; /* Automatically adjust the height based on the aspect ratio */
+  }
+
+
+}
   </style>
   

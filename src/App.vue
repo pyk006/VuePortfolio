@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class = "main">
     
   <nav class = "nav-bar">
     <div class="logo__main" @click="refreshPage">
@@ -21,11 +21,15 @@
               />
             </svg>
           </div>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-    <router-link to="/projects">Projects</router-link>
+    <router-link class = "router" to="/" key="home">Home</router-link> |
+    <router-link class = "router" to="/about" key="about">About</router-link>
+    <router-link class = "router" to="/projects" key="projects">Projects</router-link>
   </nav>
-  <router-view/>
+  <router-view v-slot="{ Component }">
+    <transition :name="anim" mode="out-in">
+      <Component :is="Component"/>
+    </transition>
+  </router-view>
   <footer class = "footer">
     <ul class = "footer-list">
       <li><a class = "mailto" href="mailto:phillipkim777@gmail.com">Contact Me!</a></li>
@@ -39,9 +43,16 @@ export default {
     refreshPage() {
       window.location.reload();
     }
+
+	},
+  data() {
+		return {
+			anim: 'fade'
+		};
   }
 }
 </script>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -77,6 +88,7 @@ export default {
   padding: 10px;
   background-color:#061428;
   box-shadow: 0 0.5rem 1rem rgba(85, 159, 194, 0.6);
+  z-index: 1;
 }
 
 nav a {
@@ -129,6 +141,21 @@ nav a.router-link-exact-active {
 }
 #logo:hover .logo-letter {
   fill: rgba(188, 211, 236, 0.5);
+}
+
+.router {
+  text-decoration: none;
+}
+.main {
+  will-change: transform, opacity;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease-out
 }
 
 </style>

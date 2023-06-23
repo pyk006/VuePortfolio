@@ -2,7 +2,7 @@
     <div class="home">
       <span class="typed-text">{{ typeValue }}</span>
 
-      <LandingPage/>
+      <LandingPage class = "landing"/>
 
 
     </div>
@@ -24,7 +24,7 @@
       displayTextArray: ["Phillip Kim", "Full Stack", "UI/UX"],
       typingSpeed: 100,
       erasingSpeed: 100,
-      newTextDelay: 2000,
+      newTextDelay: 500,
       displayTextArrayIndex: 0,
       charIndex: 0,
     };
@@ -69,10 +69,17 @@
   
   <style lang = "scss" scoped>
   
+.home {
+  position: relative;
 
+}
 .typed-text {
   position: absolute;
-  top: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -81,6 +88,22 @@
   color: #c3e1ff;
   font-size: 10rem;
 }
+@media only screen and (max-width: 1023px) {
+  .typed-text {
+    font-size: 5rem;
+  }
+}
 
+@media only screen and (max-width: 767px) {
+  .typed-text {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .typed-text {
+    font-size: 2rem;
+  }
+}
   
   </style>
