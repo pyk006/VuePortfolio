@@ -1,5 +1,5 @@
 <template>
-        <h1 class = "project-header">
+        <h1 class = "project-header" style="color: #FF0">
             Projects
             <div class = "grid">
               <a class = "grid-item grid-animal" href="https://github.com/pyk006/T.E.-Paws-Rescue" target="_blank">
@@ -36,7 +36,7 @@ export default {
 </script>
 <style scoped>
     * {
-        background-color: #061428;
+        background-color: #232323;
     }
     .project-header {
         margin: 0;
@@ -68,7 +68,7 @@ export default {
 
     }
     .grid-item:hover {
-      box-shadow: -6px 6px 10px rgba(223, 17, 17, 0.5), 6px 6px 10px rgba(223, 17, 17, 0.5), 0 6px 10px rgba(223, 17, 17, 0.5);
+      box-shadow: -6px 6px 10px rgba(255,255,0,0.5), 6px 6px 10px rgba(255,255,0,0.5), 0 6px 10px rgba(255,255,0,0.5);
       transform: scale(1.02);
 
     }

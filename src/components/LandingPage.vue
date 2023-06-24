@@ -437,7 +437,7 @@
           </g>
           
           </svg>
-  
+          <router-link to="/about"><span></span>About Me!</router-link>
     </div>
   </template>
   
@@ -451,7 +451,70 @@
   </script>
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
-  <style scoped>
+  <style lang = "scss" scoped>
+  a
+{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 50px;
+    background: #232323;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    color: #FF0;
+    font-size: 20px;
+    font-family: verdana;
+    letter-spacing: 4px;
+/*    border-radius: 20px; */
+}
+
+a:before,
+a:after,
+span:before,
+span:after
+{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #FF0;
+    transition: 1s;
+    mix-blend-mode: hue;
+}
+
+a:before
+{
+    top: -2px;
+    left: -2px
+}
+a:after
+{
+    top: -2px;
+    right: -2px;
+}
+span:before
+{
+    bottom: -2px;
+    left: -2px
+}
+span:after
+{
+    bottom: -2px;
+    right: -2px
+}
+
+a:hover:before,
+a:hover:after,
+a:hover span:before,
+a:hover span:after
+{
+    width: calc( 180px/2 );
+    height: calc( 50px/2 )
+}
             .st0{display:none;}
             .st1{display:inline;}
             .st2{fill:url(#SVGID_1_);}
@@ -715,14 +778,16 @@
   
   
   .hello {
-    background: linear-gradient(90deg, #03031d, #1a0303);
+    background: linear-gradient(90deg, rgba(19, 19, 2, 0.8), #2c0303, #350404);
     animation: gradient 40s ease infinite;
     background-size: 600% 600%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     
   }
+  
   
   .landing_box {
     height: 100vh;
@@ -733,6 +798,7 @@
     mix-blend-mode: color-dodge;
     padding-left: 200px;
     padding-bottom: 100px;
+    opacity: 0.85;
   }
   .back-gradient {
     display: flex;
@@ -765,8 +831,13 @@
     width: 100%; /* Set the width of the SVG container to 100% of its parent */
     height: auto; /* Automatically adjust the height based on the aspect ratio */
   }
+  a {
+    display: none
+  }
 
 
 }
+
+
   </style>
   

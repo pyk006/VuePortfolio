@@ -2,7 +2,7 @@
     <div class="about">
       <h1 class = "title">About Me</h1>
       <img class = "title-img" src="/Images/profile.jpg" alt="self-photo">
-      <p class = "about-summary" style="color: #c5efff">Hey there! I'm Phillip, and I've always been captivated by the thrill of problem-solving and the excitement of learning new skills. During my university days, I focused on Human Computer Interaction, driven by a desire to uncover the best solutions for user-centered design. However, along the way, I stumbled upon the world of software development.
+      <p class = "about-summary" style="color: rgb(206, 206, 105)">Hey there! I'm Phillip, and I've always been captivated by the thrill of problem-solving and the excitement of learning new skills. During my university days, I focused on Human Computer Interaction, driven by a desire to uncover the best solutions for user-centered design. However, along the way, I stumbled upon the world of software development.
 
 As I dived into the realms of HTML, CSS, and JavaScript, a passion ignited within me. I can vividly recall the moments when I created my very first portfolio website, crafted entirely from scratch. Sure, it may not have been the most visually stunning design, but that feeling of accomplishment was unbeatable.
 
@@ -13,7 +13,7 @@ As of now, I have successfully completed an incredible Full Stack Development Bo
 
   .about {
     min-height: 100vh;
-    background-color: #061428;
+    background-color: #232323;
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@ As of now, I have successfully completed an incredible Full Stack Development Bo
     justify-content: center;
   }
   .title {
-    color: #c5efff;
+    color: #FF0;
     height: 100px;
   }
   .title-img {

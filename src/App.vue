@@ -65,17 +65,17 @@ export default {
 }
 
 ::-webkit-scrollbar-track {
-  background: #061428;
+  background: #232323;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #819fbe;
+  background: rgb(173, 173, 7);
   border-radius: 100vw;
-  border: 0.35em solid #061428;
+  border: 0.35em solid #232323;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #0270c4;
+  background: rgb(82, 90, 13);
 }
 
 .nav-bar {
@@ -83,8 +83,8 @@ export default {
   position: relative;
   justify-content: space-between;
   padding: 10px;
-  background-color:#061428;
-  box-shadow: 0 0.5rem 1rem rgba(85, 159, 194, 0.6);
+  background-color:#232323;
+  box-shadow: 0 0.1rem 1rem rgba(255, 255, 0, 0.7);
   z-index: 1;
 }
 .nav-links {
@@ -94,7 +94,8 @@ export default {
 .nav-links router-link {
   display: inline-block;
   font-weight: bold;
-  color: #35697e;
+  color: rgb(102, 102, 66);
+
   padding: 0 10px;
 }
 
@@ -102,19 +103,18 @@ nav a {
   display: inline-block;
   font-weight: bold;
 
-  color: #35697e;
+  color: rgb(102, 102, 66);
   padding-top: 30px;
   padding-right: 60px;
 }
 
 nav a.router-link-exact-active {
-  color: #c5efff;
+  color: #FF0;
 }
 .footer {
   padding: 20px;
-  box-shadow: 0 0.3rem 0.5rem rgb(85, 159, 194);
-  background-color: #061428;
-  z-index: 9999;
+  box-shadow: 0 0.3rem 1.5rem #FF0;
+  background-color: #232323;
 }
 .footer-list {
   text-align: right;
@@ -126,16 +126,16 @@ nav a.router-link-exact-active {
   border: 1px solid rebeccapurple;
   padding: 15px;
   text-decoration: none;
-  color: #c5efff;
+  color: #FF0;
 }
 .logo-letter {
   cursor: pointer;
-  fill: rgb(188, 211, 236);
+  fill: #FF0;
   width: 10px;
 
 }
 .logo-letter:hover {
-  fill: rgba(188, 211, 236, 0.5);
+  fill: #FF0;
 }
 .logo__main {
   height: 90px;
@@ -146,14 +146,14 @@ nav a.router-link-exact-active {
   cursor: pointer;
 }
 #logo:hover .logo-letter {
-  fill: rgba(188, 211, 236, 0.5);
+  fill: rgb(119, 119, 83);
 }
 
 .router {
   text-decoration: none;
 }
 .main {
-  background: #061428;
+  background: #232323;
   will-change: transform, opacity;
 }
 

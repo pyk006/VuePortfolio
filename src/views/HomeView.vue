@@ -4,7 +4,6 @@
 
       <LandingPage class = "landing"/>
 
-
     </div>
   </template>
   
@@ -81,7 +80,7 @@
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #c3e1ff;
+  color: rgb(255, 255, 188);
   font-size: 8rem;
 }
 
@@ -103,5 +102,6 @@
     font-size: 2rem;
   }
 }
+
   
   </style>
