@@ -21,9 +21,11 @@
               />
             </svg>
           </div>
+          <div class = "nav-links">
     <router-link class = "router" to="/" key="home">Home</router-link> |
     <router-link class = "router" to="/about" key="about">About</router-link>
     <router-link class = "router" to="/projects" key="projects">Projects</router-link>
+  </div>
   </nav>
   <transition name="fade" mode="out-in">
       <router-view/>
@@ -36,10 +38,12 @@
 </div>
 </template>
 <script>
+import router from '@/router/index';
 export default {
   methods: {
     refreshPage() {
-      window.location.reload();
+      this.$route.path != '/' ? router.push('/') : window.location.reload();
+
     }
 
 	},
@@ -77,11 +81,21 @@ export default {
 .nav-bar {
   display: flex;
   position: relative;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 10px;
   background-color:#061428;
   box-shadow: 0 0.5rem 1rem rgba(85, 159, 194, 0.6);
   z-index: 1;
+}
+.nav-links {
+  display: flex;
+}
+
+.nav-links router-link {
+  display: inline-block;
+  font-weight: bold;
+  color: #35697e;
+  padding: 0 10px;
 }
 
 nav a {
@@ -124,7 +138,6 @@ nav a.router-link-exact-active {
   fill: rgba(188, 211, 236, 0.5);
 }
 .logo__main {
-  padding-right: 1500px;
   height: 90px;
   width: 70px;
   flex-shrink: 0;
