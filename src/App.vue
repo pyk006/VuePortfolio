@@ -25,11 +25,9 @@
     <router-link class = "router" to="/about" key="about">About</router-link>
     <router-link class = "router" to="/projects" key="projects">Projects</router-link>
   </nav>
-  <router-view v-slot="{ Component }">
-    <transition :name="anim" mode="out-in">
-      <Component :is="Component"/>
+  <transition name="fade" mode="out-in">
+      <router-view/>
     </transition>
-  </router-view>
   <footer class = "footer">
     <ul class = "footer-list">
       <li><a class = "mailto" href="mailto:phillipkim777@gmail.com">Contact Me!</a></li>
@@ -45,11 +43,6 @@ export default {
     }
 
 	},
-  data() {
-		return {
-			anim: 'fade'
-		};
-  }
 }
 </script>
 
@@ -147,15 +140,17 @@ nav a.router-link-exact-active {
   text-decoration: none;
 }
 .main {
+  background: #061428;
   will-change: transform, opacity;
 }
+
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
 }
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.5s ease-out
+  transition: opacity 0.5s ease-out;
 }
 
 </style>

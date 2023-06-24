@@ -20,7 +20,6 @@
     data: () => {
     return {
       typeValue: "",
-      typeStatus: false,
       displayTextArray: ["Phillip Kim", "Full Stack", "UI/UX"],
       typingSpeed: 100,
       erasingSpeed: 100,
@@ -74,20 +73,19 @@
 
 }
 .typed-text {
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #c3e1ff;
+  font-size: 8rem;
 }
 
-.typed-text {
-  color: #c3e1ff;
-  font-size: 10rem;
-}
+
 @media only screen and (max-width: 1023px) {
   .typed-text {
     font-size: 5rem;
