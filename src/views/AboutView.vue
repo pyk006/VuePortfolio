@@ -22,6 +22,7 @@ As of now, I have successfully completed an incredible Full Stack Development Bo
     align-items: center;
     text-align: center;
     justify-content: flex-start;
+    margin-bottom: 120px;
   }
   .title {
     color: #FF0;
@@ -30,6 +31,7 @@ As of now, I have successfully completed an incredible Full Stack Development Bo
   .title-img {
     border-radius: 50%;
     height: 250px;
+    margin-bottom: 100px;
     transition: filter 0.3s ease;
   }
   .title-img:hover {
@@ -37,6 +39,7 @@ As of now, I have successfully completed an incredible Full Stack Development Bo
   }
 
   .about-summary {
-    padding: 30px 60px;
-word-wrap: break-word;  }
+    padding: 30px 120px;
+    word-wrap: break-word; 
+}
   </style>
