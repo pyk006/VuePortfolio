@@ -778,8 +778,8 @@ a:hover span:after
   
   
   .hello {
-    background: linear-gradient(90deg, rgba(19, 19, 2, 0.8), #2c0303, #350404);
-    animation: gradient 40s ease infinite;
+    background: linear-gradient(90deg, rgba(19, 19, 2, 0.8), rgba(19, 12, 2, 0.8), rgba(19, 2, 2, 0.8));
+    animation: gradient 20s ease infinite;
     background-size: 600% 600%;
     display: flex;
     justify-content: center;
