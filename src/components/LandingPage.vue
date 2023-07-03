@@ -778,7 +778,7 @@ a:hover span:after
   
   
   .hello {
-    background: linear-gradient(90deg, rgba(19, 19, 2, 0.8), rgba(19, 12, 2, 0.8), rgba(19, 2, 2, 0.8));
+    background: linear-gradient(90deg, rgba(19, 19, 2, 0.8), rgba(39, 24, 3, 0.8), rgba(49, 2, 2, 0.8));
     animation: gradient 20s ease infinite;
     background-size: 600% 600%;
     display: flex;
