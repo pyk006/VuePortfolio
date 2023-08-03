@@ -38,11 +38,11 @@
           <p>A prototype nutrition AR application using Figma (UX Design Project)</p>
         </div>
               </a>
-              <a class = "grid-item grid-data" href="https://github.com/pyk006/ROT13-Encoder" target="_blank">
-                <img class = "card-image rot-13" src="/Images/ROT13.PNG" alt="rot-13-cli">
+              <a class = "grid-item grid-data" href="https://github.com/pyk006/SolrProductAPI" target="_blank">
+                <img class = "card-image rot-13" src="/Images/ProductSolr.PNG" alt="Solr-API-cli">
                 <div class="overlay">
-          <h3>ROT-13 Encoder</h3>
-          <p>A Backend Java CLI ROT-13 Encoder</p>
+          <h3>Product Solr API</h3>
+          <p>A Backend Java Retail Product Search API</p>
         </div>
               </a>
           </div>
